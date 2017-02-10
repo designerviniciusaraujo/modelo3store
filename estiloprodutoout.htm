@@ -1,0 +1,38 @@
+<p255>
+  <div class="DivHomeProd"> <!--
+    <div id="idFlagSale<IDProduto>" class="FCfnShowEconomy"></div>
+    <script>sF$.fnShowEconomyFlag(<PrecoNum>,<PrecoOri>,"idFlagSale<IDProduto>");</script> -->
+    <div class="DivHomeImagemProd"><ImagemProd></div>
+    <div class="DivIntHomeProd"> 
+      <div class="DivHomeNomeProd">
+        <span class="HomeNomeProd font-16"><NomeProd></span>
+      </div>
+      <div class="DivHomePriceProd" style="white-space:nowrap;">
+        <div id="idProdPrice<IDProduto>">
+          <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>
+        </div> 
+        <div class="PriceAVistaLista"><script>sF$.fnShowParcels(<PrecoNum>,<MaxParcelasProdNum>);</script><br>
+          <script>sF$.fnMostraDescontoHome(<PrecoNum>);</script>
+        </div> 
+      </div>  
+    </div>
+  </div>
+</p255> 
+
+<p200>
+  <div class="DivHomeProdDest">
+    <div class="DivIntHomeProdDest"> 
+      <div class="DivHomeNomeProdDest"><a href="<URLProd>"><span class="HomeNomeProdDest"><NomeProd></span></a></div>
+        <div class="DivHomePriceProdDest">
+          <div id="idProdPrice<IDProduto>">
+            <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>
+          </div>
+        </div>
+      </div> 
+      <div class="DivHomeImagemProdDest"><a href="<URLProd>"><ImagemDet></a></div>
+  </div>
+</p200>
+
+<!-- EstiloProdutoOut.htm -->
+ 
+ 
