@@ -14,6 +14,7 @@ var sF$=(function(){
     return document.getElementById(id);
   }
 
+
   //Função que faz pré-load das imagens
   function fnPreloadImages() { //v3.0
     var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
@@ -22,7 +23,7 @@ var sF$=(function(){
   }
 
   //Função para mostrar valor economizado em produtos em promoção
-  function fnShowEconomy(ProdPrice,ProdPriceOri){
+  function fnShowEconomy(ProdPrice,ProdPriceOri) {
     if(ProdPrice!=ProdPriceOri)document.write("<span class=FCfnShowEconomy>Economize <b>"+FormatPrice(ProdPriceOri-ProdPrice,FC$.Currency)+"</b> ("+fnFormatNumber(((ProdPriceOri-ProdPrice)/ProdPriceOri)*100)+"%)</span>");
   }
   
@@ -81,14 +82,14 @@ var sF$=(function(){
     if(Price!=OriginalPrice){
       sPrice+="<div class=\"prices\">";
       sPrice+="  <div class=\"old-price\">De&nbsp; <span>"+FormatPrice(OriginalPrice,FC$.Currency)+"</span></div>";
-      sPrice+="  <div class=\"price\"><div class=\"por\">Por</div><div class=\"atual\"><span class=\"currency\"><strong>"+FC$.Currency+" </span><span class=\"int\">"+ fnFormatNumber(iPriceInt) +"</span><span class=\"dec\">,"+ PriceDecimal +"</span></strong></div></div>";
+      sPrice+="  <div class=\"price\"><span class=\"currency\">Por <strong>"+FC$.Currency+" </span><span class=\"int\">"+ fnFormatNumber(iPriceInt) +"</span><span class=\"dec\">,"+ PriceDecimal +"</span></strong></div>";
       if(iMaxParcels>1)sPrice+="  <div class=\"installments\"><strong><span class=\"installment-count\">"+ iMaxParcels +"</span>x</strong> de <strong><span class=\"installment-price\">"+FormatPrice(CalculaParcelaJurosCompostos(Price,iMaxParcels),FC$.Currency)+"</span></strong>"+ sInterest +"</div>";
       sPrice+="</div>";
     }
     else{
       sPrice+="<div class=\"prices\">";
       sPrice+=" <div class=\"old-price\"><span>&nbsp;</span></div>";
-      sPrice+=" <div class=\"price\"><div class=\"por\">Por</div><div class=\"atual\"><span class=\"currency\"><strong>"+FC$.Currency+" </span><span class=\"int\">"+ fnFormatNumber(iPriceInt) +"</span><span class=\"dec\">,"+ PriceDecimal +"</span></strong></div></div>";
+      sPrice+=" <div class=\"price\"><span class=\"currency\">Por <strong>"+FC$.Currency+" </span><span class=\"int\">"+ fnFormatNumber(iPriceInt) +"</span><span class=\"dec\">,"+ PriceDecimal +"</span></strong></div>";
       if(iMaxParcels>1)sPrice+="  <div class=\"installments\"><strong><span class=\"installment-count\">"+ iMaxParcels +"</span>x</strong> de <strong><span class=\"installment-price\">"+FormatPrice(CalculaParcelaJurosCompostos(Price,iMaxParcels),FC$.Currency)+"</span></strong>"+ sInterest +"</div>";
       sPrice+="</div>";
     }
@@ -163,37 +164,67 @@ var sF$=(function(){
 
   function fnCustomizeIconsSocialNetworks(isProd){
   //se isProd personaliza ícones do detalhe do produto, caso contrário do rodapé
-    if(isProd)var oContentHTML=document.getElementById("idShareProd");
-    else var oContentHTML=document.getElementById("idShareFooter");
-    if(oContentHTML)var aImgsShare=oContentHTML.getElementsByTagName('img');
-    if(aImgsShare)
-      for(var i=0;i<aImgsShare.length;i++){
-        if(aImgsShare[i].className=='EstImgShareFacebook'){
-          aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodfacebook.svg?cccfc=1');
-          aImgsShare[i].src=FC$.PathImg +'iconprodfacebook.svg?cccfc=1';
-        }
-        else if(aImgsShare[i].className=='EstImgShareTwitter'){
-          aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodtwitter.svg?cccfc=1');
-          aImgsShare[i].src=FC$.PathImg+ 'iconprodtwitter.svg?cccfc=1';
-        }
-        else if(aImgsShare[i].className=='EstImgShareGooglePlus'){
-          aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodgoogleplus.svg?cccfc=1');
-          aImgsShare[i].src=FC$.PathImg+ 'iconprodgoogleplus.svg?cccfc=1';
-        }
-        else if(aImgsShare[i].className=='EstImgSharePinterest'){
-          aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodpinterest.svg?cccfc=1');
-          aImgsShare[i].src=FC$.PathImg+ 'iconprodpinterest.svg?cccfc=1';
-        }
-        if(isProd){ //produto
-          aImgsShare[i].style.width="25px";
-          aImgsShare[i].style.height="25px";
-        }
-        else{ //rodapé
-          aImgsShare[i].style.width="20px";
-          aImgsShare[i].style.height="20px";
-        }
+    var oContentHTML;
+    if(isProd){
+      oContentHTML=document.getElementById("idShareProdDet");
     }
-  }
+    else{
+      oContentHTML=document.getElementById("idShareFooter");
+    }
+    if(oContentHTML){var aImgsShare=oContentHTML.getElementsByTagName('img');}
+    if(aImgsShare){
+        for(var i=0;i<aImgsShare.length;i++){
+          if(isProd){
+            if(aImgsShare[i].className=='EstImgShareFacebook'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodfacebook.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg +'det_prodfacebook.svg?cccfc=1';
+            }
+            else if(aImgsShare[i].className=='EstImgShareTwitter'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'det_twitter.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg+ 'det_twitter.svg?cccfc=1';
+            }
+            else if(aImgsShare[i].className=='EstImgShareGooglePlus'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'det_googleplus.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg+ 'det_googleplus.svg?cccfc=1';
+            }
+            else if(aImgsShare[i].className=='EstImgSharePinterest'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'det_pinterest.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg+ 'det_pinterest.svg?cccfc=1';
+            }
+            aImgsShare[i].style.width="30px";
+            aImgsShare[i].style.height="30px";
+          }
+          else{
+            if(aImgsShare[i].className=='EstImgShareFacebook'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodfacebook.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg +'iconprodfacebook.svg?cccfc=1';
+            }
+            else if(aImgsShare[i].className=='EstImgShareTwitter'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodtwitter.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg+ 'iconprodtwitter.svg?cccfc=1';
+            }
+            else if(aImgsShare[i].className=='EstImgShareGooglePlus'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodgoogleplus.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg+ 'iconprodgoogleplus.svg?cccfc=1';
+            }
+            else if(aImgsShare[i].className=='EstImgSharePinterest'){
+              aImgsShare[i].setAttribute('data-src',FC$.PathImg +'iconprodpinterest.svg?cccfc=1');
+              aImgsShare[i].src=FC$.PathImg+ 'iconprodpinterest.svg?cccfc=1';
+            }
+            aImgsShare[i].style.width="30px";
+            aImgsShare[i].style.height="30px";
+          }
+          // if(isProd){ //produto
+          //   aImgsShare[i].style.width="30px";
+          //   aImgsShare[i].style.height="30px";
+          // }
+          // else{ //rodapé
+          //   aImgsShare[i].style.width="30px";
+          //   aImgsShare[i].style.height="30px";
+          // }
+        }
+      }
+    }
  
   function fnShowCart(bShow,ItensCesta){
    oTabItensCart=document.getElementById('TabItensCart');
@@ -374,24 +405,34 @@ var sF$=(function(){
      }else if(iPercentual >= 30){
        sColorRect= "#01acf2"; sColorPolygon="#0059d4";
      }else{
-       sColorRect= "#4BDD14"; sColorPolygon="#46B34F";
+       sColorRect= "#4BDD14"; sColorPolygon="#22cd02";
      }
 
-
-     
-
-     var sSVG =  '<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 72.955 41" xml:space="preserve">'
-                +'<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">'
-                +' <polygon fill="'+ sColorPolygon +'" points="65.547,28.148 72.955,34.568 66.782,40.741 66.782,32.099"/>'
-                +' <rect x="-0.132" fill="'+ sColorRect +'" width="73.087" height="34.568"/>'
-                +' <text transform="matrix(1 0 0 1 7.2812 26.4634)" font-family="\'Arial\'" font-size="23.5368" style="font-weight:bold">'+ iPercentual +'</text>'
-                +'</g>'
-                +'<g id="Listagem-1024" transform="translate(-416.000000, -1093.000000)" fill="#22CE00"><text transform="matrix(1 0 0 1 35.2812 26.4634)" font-family="\'Arial\'" font-size="14.5368" style="font-weight:bold">%</text></g>'
-                +'<g><text transform="matrix(1 0 0 1 49.2812 26.4634)" font-family="\'Arial\'" font-size="14.5368" style="font-weight:bold">off</text></g>'
-                +'</svg>';      
+/*     var sSVG = '<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">'
+               +'<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">'
+               +'  <g id="Listagem-1024" transform="translate(-416.000000, -1093.000000)" fill="'+ sColorPolygon +'">'
+               +'    <circle id="Oval" cx="444" cy="1121" r="28">'
+               +'      <text transform="matrix(1 0 0 1 7.2812 26.4634)" font-family="\'Arial\'" font-size="23.5368" style="font-weight:bold">'+ iPercentual +'</text>'            
+               +'      <g><text transform="matrix(1 0 0 1 35.2812 26.4634)" font-family="\'Arial\'" font-size="14.5368" style="font-weight:bold">%</text></g>'
+               +'      <g><text transform="matrix(1 0 0 1 49.2812 26.4634)" font-family="\'Arial\'" font-size="14.5368" style="font-weight:bold">off</text></g>'
+               +'    </circle>'
+               +'  </g>'
+               +'</g>'
+               +'</svg>'   */
+               
+     var sSVG = '<div class="circle" style="background:'+ sColorPolygon +';">'
+               +'  <div class="valor">- '+ iPercentual +'%<br></div>'
+               +'  <div class="flag-off">OFF</div>'
+               /*+'      <text transform="matrix(1 0 0 1 7.2812 26.4634)" font-family="\'Arial\'" font-size="23.5368" style="font-weight:bold;color:#FFF;position:relative:10;">'+ iPercentual +'</text>'            
+               +'      <g><text transform="matrix(1 0 0 1 35.2812 26.4634)" font-family="\'Arial\'" font-size="14.5368" style="font-weight:bold;color:#FFF;position:relative:10;">%</text></g>'
+               +'      <g><text transform="matrix(1 0 0 1 49.2812 26.4634)" font-family="\'Arial\'" font-size="14.5368" style="font-weight:bold;color:#FFF;position:relative;10;">off</text></g>'*/
+               +'</div>'                 
+               
+                 
      el.innerHTML = sSVG;
    }
   }
+
 
   return{
     sCurrentPage:sCurrentPage,
@@ -506,7 +547,7 @@ function fnShowCEP(IDProd){
 function fnGetShippingValuesProd(IDProd){
   sCEP=document.getElementById("idZip"+ IDProd).value;
   fnSetCookie('CEP'+FC$.IDLoja,sCEP);
-  if(sCEP==""){document.getElementById("idShippingValues"+IDProd).innerHTML="<span class='freightResult' style=color:#990000;>Informe o CEP</span>";return;}
+  if(sCEP==""){document.getElementById("idShippingValues"+IDProd).innerHTML="<span class='freightResult' style=color:#434343;>Informe o CEP</span>";return;}
   document.getElementById("idShippingValues"+IDProd).innerHTML="";
   document.getElementById("ImgLoadingCEP").style.display='';
   var iQty=document.getElementById("idQtdZip"+IDProd).value;
@@ -521,7 +562,7 @@ function processXMLCEP(obj,IDProd){
   var iErr=ReadXMLNode(obj,"err");if(iErr==null)return;
   if(iErr!="0"){
     document.getElementById("ImgLoadingCEP").style.display='none';
-    oShippingValues.innerHTML="<span class='freightResult' style=color:#990000;>"+ ReadXMLNode(obj,"msg") +"</span>";
+    oShippingValues.innerHTML="<span class='freightResult' style=color:#434343;>"+ ReadXMLNode(obj,"msg") +"</span>";
     return;
   }
   oShippingValues.innerHTML="";
@@ -717,7 +758,7 @@ function fnMaxInstallmentsGrid(PrecoProd,MaxParcelas){
   if(typeof Juros!="undefined"){
     if(PrecoProd==0||MaxParcelas==1||Juros.length==0)return "";
     if(MaxParcelas==0||MaxParcelas>Juros.length)MaxParcelas=Juros.length;
-    if(Juros[MaxParcelas-1]>0)ComSem=""; else ComSem="<font color=#990000> sem juros</font>";
+    if(Juros[MaxParcelas-1]>0)ComSem=""; else ComSem="<font color=#424242> sem juros</font>";
     return "<span class=EstParc> ou <b>"+MaxParcelas+"x</b>"+ComSem+" de <b>"+FormatPrice(CalculaParcelaJurosCompostos(PrecoProd,MaxParcelas),FC$.Currency)+"</b></span>";
   }else{
     return "";
@@ -736,7 +777,7 @@ function FormatNumber(num){
 /*Função para mostrar valor economizado em produtos em promoção*/
 function fnShowEconomyGrid(ProdPrice,ProdPriceOri){
   if(ProdPrice!=ProdPriceOri && typeof FormatNumber == 'function' && typeof FormatPrice == 'function' ){
-    return "<font style='font-size:16px;display:block;margin:10px 0;' color=#6f9e45>Economize <b>"+ FormatPrice(ProdPriceOri-ProdPrice,FC$.Currency) +"</b> ("+ FormatNumber(((ProdPriceOri-ProdPrice)/ProdPriceOri)*100)+"%)</font>";
+    return "<font class='economy' color=#52d04b>Economize <b>"+ FormatPrice(ProdPriceOri-ProdPrice,FC$.Currency) +"</b> ("+ FormatNumber(((ProdPriceOri-ProdPrice)/ProdPriceOri)*100)+"%)</font>";
   }else{return "";}
 }
 
@@ -752,9 +793,9 @@ function fnShowCEPGrid(IDProd){
     sCEP+="      <div id='idDivCEPCalc'>";
     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";
     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";
-    sCEP+="        <img src='"+ FC$.PathImg +"iconnewsletter.svg?cccfc=1' height='29px' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";
+    sCEP+="        <img src='"+ FC$.PathImg +"iconcep.svg?cccfc=1' height='29px' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";
     sCEP+="      </div>";
-    sCEP+="    </div>";
+    sCEP+="     </div>";
     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
     sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";
     sCEP+="  </div>";
@@ -767,7 +808,7 @@ function fnShowCEPGrid(IDProd){
 function fnGetShippingValuesProdGrid(IDProd){
   sCEP=document.getElementById("idZip"+ IDProd).value;
   fnSetCookie('CEP'+FC$.IDLoja,sCEP);
-  if(sCEP==""){document.getElementById("idShippingValues"+IDProd).innerHTML="<span class='freightResult' style=color:#990000;>Informe o CEP</span>";return;}
+  if(sCEP==""){document.getElementById("idShippingValues"+IDProd).innerHTML="<span class='freightResult' style=color:#424242;>Informe o CEP</span>";return;}
   document.getElementById("idShippingValues"+IDProd).innerHTML="";
   document.getElementById("ImgLoadingCEP").style.display='';
   var iQty=document.getElementById("idQtdZip"+IDProd).value;
@@ -783,7 +824,7 @@ function processXMLCEPGrid(obj,IDProd){
   var iErr=ReadXMLNode(obj,"err");if(iErr==null)return;
   if(iErr!="0"){
     document.getElementById("ImgLoadingCEP").style.display='none';
-    oShippingValues.innerHTML="<span class='freightResult' style=color:#990000;>"+ ReadXMLNode(obj,"msg") +"</span>";
+    oShippingValues.innerHTML="<span class='freightResult' style=color:#424242;>"+ ReadXMLNode(obj,"msg") +"</span>";
     return;
   }
   oShippingValues.innerHTML="";
@@ -870,7 +911,10 @@ function fnShowGlobalSignin(){
     if(bFacebookLogin)FCLib$.signinFacebook();
     if(bGoogleLogin)FCLib$.signinGoogle();
   }
+
 }
+
+
 
 function fnLoginShowUserName(user){
   sF$.fnLoginUserName(user.fullName,user.pictureURL);
