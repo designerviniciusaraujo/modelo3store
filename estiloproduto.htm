@@ -9,7 +9,7 @@ jQuery(document).ready(function (){
     }, 1000);
   });
 });
-</script>
+</script> 
 
 <!-- Search Filters -->
 <div id="idDivPath">
@@ -18,8 +18,8 @@ jQuery(document).ready(function (){
     <div id="idShowFilters"><button onclick="ToggleIDs('idHideFilters','idShowFilters');document.getElementById('idFiltersFC').style.display='';">Exibir</button></div>
     <div id="idHideFilters" style="display:none;"><button onclick="ToggleIDs('idShowFilters','idHideFilters');document.getElementById('idFiltersFC').style.display='none';">Ocultar</button></div>
   </div>
-<!-- ADICIONAIS  -->
- 
+
+<!-- ADICIONAIS  --> 
   <div id="idFiltersFC" style="display:none;">
     <div id="idListaProdCategoriasFC">
       <div class="EstTitQts"><LegendaCats></div>
@@ -63,12 +63,18 @@ jQuery(document).ready(function (){
 <ProdLista>
 <!-- Prod Lista -->
 <FormProd>
-<div class="FCprodListDisplay">
-  <div class="DivListProd col-small-12 col-medium-6 col-large-4 col-xlarge-3" onclick="NoCascate('<URLProd>');">
+<div class="FCprodListDisplay">   
+  <div class="DivListProd col-small-12 col-medium-6 col-large-4 col-xlarge-3">
     <!-- Image -->
     <div id="idFlagSale<IDProduto>" class="FCfnShowEconomy"></div>
     <script>sF$.fnShowEconomyFlag(<PrecoNum>,<PrecoOri>,"idFlagSale<IDProduto>");</script> 
-    <div class="DivListProdImagemProd"><ImagemProd></div>
+    <div class="DivListProdImagemProd"> 
+       <div class="hover02 column"> 
+        <div>
+          <figure><ImagemProd></figure>           
+        </div> 
+      </div> 
+    </div>  
       <div class="DivIntListProdProd">  
         <div class="DivListProdNomeProd">
           <!-- Name -->
@@ -88,9 +94,9 @@ jQuery(document).ready(function (){
   </div>
 </div>
 </FormProd>
-</ProdLista>
-
+</ProdLista> 
 <ProdDet>
+
 <!-- Prod Det -->
 <link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1" />
@@ -108,13 +114,16 @@ jQuery(document).ready(function (){
 <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6">  
   <div class="SocialProdLinks">
     <ul class="ProductStyleULFC ProductStyleSocialIcons" id="idShareProdDet">
-      <li style="white-space:nowrap;"><span><a href="javascript:MostraIndique(<IDLoja>,<IDProduto>)"><img src="<PathTo file="images/iconprodemail.svg">" width="20" height="20" border="0" alt="E-mail" title="Recomende este produto"></a></span></li>
+      <li style="white-space:nowrap;">
+        <span><a href="javascript:MostraIndique(<IDLoja>,<IDProduto>)">
+        <img src="<PathTo file="images/iconprodemail.svg">" width="20" height="20" border="0" alt="E-mail" title="Recomende este produto"></a></span>
+      </li>
       <li><span><ShareGooglePlus></span></li>
       <li><span><ShareFacebook></span></li>
       <li><span><ShareTwitter></span></li>
       <li><span><SharePinterest></span></li>
-      <li><span class="ShareWhatsApp"><a href="whatsapp://send?text=Veja o produto '<NomeProd>'. Segue o link: http://lvfc.co/l<IDLojaNum>/p<IDProduto>" target="_blank"><img src="<PathTo file="images/icwhatsapp.svg">" width="35" height="35" border="0" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></span></li>
-    </ul> 
+      <li><span class="ShareWhatsApp col-medium-hidden"><a href="whatsapp://send?text=Veja o produto '<NomeProd>'. Segue o link: http://lvfc.co/l<IDLojaNum>/p<IDProduto>" target="_blank"><img src="<PathTo file="images/icwhatsapp.svg">" width="35" height="35" border="0" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></span></li> 
+    </ul>  
   </div>
 </div>  
 
@@ -122,7 +131,7 @@ jQuery(document).ready(function (){
   <!--Begin: Imagem Zoom -->
   <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6" id="idDivGridImg">
     <a href="<ImagemProdAmp>" class="MagicZoomPlus" rel="hint:false;initialize-on: mouseover;"><img src="<ImagemProdDet>" alt="<NomeProd>" onError="MostraImgOnError(this,0)"></a>
-  </div>
+  </div>  
   <!--End: Imagem Zoom --> 
   <!-- Begin: ProdDet Row -->
   <div class="FCProdDet"> 
@@ -134,8 +143,10 @@ jQuery(document).ready(function (){
           <li>
             <span class="prod-info">Ref:<small id="idCodProdGrid"><CodProd></small> |</span>
             <span class="prod-info">Categoria: <NomeCat></span> 
-          </li> 
-          <li class="text-left ProdRating stars">
+          </li>  
+        </ul>  
+        <ul class="avalia">
+           <li class="text-left ProdRating stars">
             <script type="text/javascript">
               iQtdOp=<OpiniaoQtd>;
               if(iQtdOp==0){document.write("<div class='ProductStyleReviewOffBoxFC'><div class='NotaOpiniaoVazio NotaOpiniaoVazio1'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio2'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio3'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio4'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio5'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio6'></div></div>")}
@@ -143,8 +154,7 @@ jQuery(document).ready(function (){
             </script>
           </li>
           <li class="ProdRating font-14"><a href="/Opiniao.asp?IDLoja=<IDLoja>&IDProduto=<IDProduto>">Avalie este produto</a></li>
-        
-        </ul> 
+        </ul>
       </div> 
       <div class="col-small-12 col-medium-12 line"><hr></div>
       <!-- End: Release - Product Name - Cod - Reviews --> 
@@ -164,6 +174,7 @@ jQuery(document).ready(function (){
       <!-- Begin: Small Description -->
       <div class="ProductStyleBoxFC">
         <ul class="ProductStyleULFC">
+          <hr>
           <li><p class="DescrLineHeight"><DescricaoCurta></p></li>
           <li class="Smais"><a class="link-descr" href="#">Saiba mais! <span><img64 src="<BaseLoja>images/iconkreading.svg" plain="true" width="25" height="25" ></span></a></li>
         </ul>

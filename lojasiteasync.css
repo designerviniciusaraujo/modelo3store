@@ -70,8 +70,7 @@ span .FooterNewsletterInput{height:38px;font-size:14px;border:1px solid #ffffff 
 
 /* Footer - Rodape.htm */
 .FootterMainBarFC .row{background:<tag-FCCSSColor3>}
-.FootterMainBarFC .row ul li a{color:<tag-FCCSSColor18>}
-.FootterMainBarFC .row ul li a:hover{color:<tag-FCCSSColor22>}
+.FootterMainBarFC .row ul li a{color:#ffffff;} 
 .FooterNewsletterBox{background-color:<tag-FCCSSColor8>}
 span .FooterNewsletterInput{border:1px solid #ffffff !important;color:<tag-FCCSSColor12>;}
 .FooterTecFastCommerce{color:<tag-FCCSSColor18>}

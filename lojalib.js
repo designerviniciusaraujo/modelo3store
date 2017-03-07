@@ -331,7 +331,7 @@ var sF$=(function(){
   function fnLoginUserName(NameUser,PicUser){
     var oImgGlobalSign=document.getElementById("idImgGlobalSignFC");
     if(NameUser==""){
-      jQuery('.loginInfo').html("<span class='col-small-6'>&nbsp;Olá, visitante&nbsp;  </span> <span class='hide-small'> | </span> <span class='col-small-6'> &nbsp;Faça seu <a class='login' href='/cadastro.asp?idloja="+FC$.IDLoja+"&pp=3&passo=1&sit=1'> Login&nbsp;</a> </span>");
+      jQuery('.loginInfo').html("<span class='col-small-6'>&nbsp;Olá, visitante&nbsp;  </span> <span class='hide-small'> | </span> <span class='col-small-6'> &nbsp;Faça seu <a class='login' href='/cadastro.asp?idloja="+FC$.IDLoja+"&pp=3&passo=1&sit=1'> Login&nbsp;</a> </span> | Entrar com");
       if(oImgGlobalSign){oImgGlobalSign.style.display="";}
     }
     else{
@@ -401,11 +401,11 @@ var sF$=(function(){
      var sColorRect = "", sColorPolygon = "";
 
      if(iPercentual >= 50){
-       sColorRect= "#fe5757"; sColorPolygon="#950706";
+       sColorRect= "#fe5757"; sColorPolygon="#e84c3d";
      }else if(iPercentual >= 30){
-       sColorRect= "#01acf2"; sColorPolygon="#0059d4";
+       sColorRect= "#01acf2"; sColorPolygon="#3297db";
      }else{
-       sColorRect= "#4BDD14"; sColorPolygon="#22cd02";
+       sColorRect= "#4BDD14"; sColorPolygon="#2dcc70";
      }
 
 /*     var sSVG = '<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">'
