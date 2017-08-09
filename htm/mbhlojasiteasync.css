@@ -1,0 +1,255 @@
+/* Footer */
+footer .amp-nav > a:nth-of-type(1){ border-top: 1px solid #ccc; }
+.amp-nav > a{ display: flex; align-items: center; width: 100%; padding: 15px 0; color:#4a4949; font-family: 'Roboto'; }
+.amp-nav > a:last-child{ border-bottom: 0; }
+.amp-nav a svg{ margin-right: 10px; fill:#757576; }
+.buttonForm { background: #52d04b; border-radius: 30px; }
+.FCNews #idMiddlePageFC #idCurrentPageFC { background:<tag-FCCSSMainColor>;    max-height: 25px; }
+[accordion-content]{ display: none; }
+.expanded{ display: block; }
+.amp-accordion-title{ width: 100%; padding: 15px 0; border: 0; color:#ffffff; background-color: #424242; font-weight:normal; margin:0; border-bottom: 1px solid #4a4949; }
+.amp-footer{ background-color: #e5e5e5; padding-top: 10px; padding-bottom: 10px; }
+.amp-footer-infos{ display: flex; flex-flow: column wrap; justify-content: center; text-align: center; }
+.amp-footer-infos span{ text-align: center; color: #555; margin-top: 5px; margin-bottom: 5px; font-size: .8rem; }
+
+/* Amp Social */
+.amp-footer-socials { display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px; }
+.amp-footer-socials > div{ width: 50px; height: 44px; background-repeat: no-repeat; background-position: center; background-size: contain; margin-right: 5px; }
+.amp-footer-socials > div a{ display: block; height: 44px; width: 100%; }
+.amp-footer-socials > div img{ display: none; }
+.amp-social-share-whatsapp { background-image: url('<Baseloja>images/whatsapp-icon.png?cccfc=1'); background-color:transparent; }
+.amp-social-share-twitter { background-image: url('<Baseloja>images/iconprodtwitter.svg?cccfc=1'); background-color: transparent; }
+.amp-social-share-gplus { background-image: url('<Baseloja>images/iconprodgoogleplus.svg?cccfc=1'); background-color: transparent; }
+.amp-social-share-email { background-image: url('<Baseloja>images/email.svg?cccfc=1'); background-color: transparent; }
+.amp-social-share-pinterest { background-image: url('<Baseloja>images/pinterest.svg?cccfc=1'); background-color: transparent; }
+.amp-social-share-facebook { background-image: url('<Baseloja>images/iconprodfacebook.svg?cccfc=1'); background-color: transparent; }
+.amp-footer-socials > div:nth-last-child(1){margin-right: 0;}
+.amp-footer-powered{ background-color: #555; text-align: right; padding-top: 5px; padding-bottom: 5px; position: relative; }
+.amp-footer-powered a{ color:#fff; font-size: .8rem; display: flex; align-items: center; justify-content: flex-end; }
+.amp-footer-powered a img{ margin-left: 5px; }
+
+/* Home */ 
+/* carousel */
+.swiper-container-prodlist{ margin-left:auto; margin-right:auto; position:relative; overflow:hidden; z-index:1 }
+.swiper-container-prodlist .swiper-notification{ position:absolute; left:0; top:0; pointer-events:none; opacity:0; z-index:-1000; }
+.swiper-container, .swiper-container-prodlist { width: 100%; height: 100%; }
+.swiper-slide { font-size: 18px; background: #fff; /* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.amp-home-section{ border-bottom: 1px solid #eee; padding-top:20px; padding-bottom:20px; }
+.amp-home-section a { color: #000; }
+.amp-home-section-title{ display: block; text-align: center; font-family: 'Roboto'; font-weight: normal; color: #000; padding-top:10px; padding-bottom:10px; font-size: 24px; }
+.amp-home-section-title a {color: #000;}
+.amp-home-section-title a:visited {color: #000;}
+.amp-prod-home{ padding:20px 0; }
+.amp-prod-home-img{ width:150px; height:150px; position:relative; text-align:center; padding:10px; margin:0 auto; }
+.amp-prod-home-img img{ max-height:150px; }
+.amp-prod-home-name { color: #000; font-size: .95rem; display: block; white-space: normal; max-width: 220px; margin: 10px auto; height: 55px; overflow: hidden; font-family: 'Roboto'; line-height: 1.2; }
+.amp-prod-home a:visited { color: #000; }
+img#idImgNewsFC {padding: 0; margin: 5px 0 15px;}
+.amp-prod-home-btn{ margin: 15px 0; cursor: pointer; background-color:<tag-FCCSSMainColor>; border-radius: 20px; width: 100px; text-transform: uppercase; color: #fff; padding: 6px 0 4px; }
+.amp-prod-home-price{ height: 35px; }
+.amp-prod-home-price .FCPrice{ display: block; }
+.amp-prod-home-price .FCPriceOriSale *{ font-size: .8rem; }
+span.FCPriceOriSale span.FCPriceInt { text-decoration: line-through;font-size: 1.4em; color: #999; }
+td#idCommentsClickFC a { background: <tag-FCCSSMainColor>; padding: 3px 10px; border-radius: 20px; color: #fff; }
+a.EstOpiniaoEmail { color: <tag-FCCSSMainColor>; font-weight: 600; }
+.amp-prod-home-price .FCPriceSale, .amp-prod-home-price .FCPriceProd{ font-weight: bold; }
+.amp-prod-home-price .FCPriceProd .FCCurrencyLabel, .amp-prod-home-price .FCPriceProd .FCPriceCent, .amp-prod-home-price .FCPriceSale .FCCurrencyLabel, .amp-prod-home-price .FCPriceSale .FCPriceCent{ font-size:.9rem; }
+.FCPriceOriSale{ margin-bottom: 3px; display: block; }
+.amp-home-item{ text-align: center; }
+
+/* Prodlist */
+.ProductList .amp-main{ padding-left: 0; padding-right: 0; }
+#idTxtIntroFoundProdsFC{ padding: 15px; color: #555; }
+#idPageCountFC{ display: none; }
+.amp-prod-list{ display: flex; padding-top: 15px; padding-bottom: 15px; }
+.amp-prod-list-link{ display: block; width: 100%; }
+.amp-prod-list-container{ height: 150px; position: relative; border-top: 1px solid #ccc; }
+.amp-prod-list-descr{ width: 280px; }
+.amp-prod-list-descr .amp-prod-home-btn{ display: block; float: right; }
+.amp-prod-list-descr a:first-child{ display: block; width: 100%; height: 80px; margin:0; overflow: hidden; padding-top: 20px; font-size: .8rem; color: #333; }
+.amp-prod-list-img img{ max-height: 120px; }
+.amp-prod-list-img, .EstDivFotoProdCross{ max-width: 120px; height: 120px; position: relative; flex: 1; }
+.amp-prod-list-info, .cs-item-name-price{ padding-left: 10px; flex: 1; }
+body.FCCart .Fbanners {display: none;}
+.amp-prod-list-name, .cs-item-name a { font-size: 1.0rem; color: #000; display: block; max-width: 70%; max-height: 57px; overflow: hidden;; }
+body.FCProduct.ProductDet .FCPriceOriSale{ color: #999; text-align: center; }
+.FCPriceOriSale{ color: #999; }
+.FCPriceSale, .FCPriceProd { color: #000; margin: 0 auto; width: 100%; display: block; }
+.amp-prod-list-price{ margin-top: 15px; }
+.amp-prod-list-price .FCPrice{ display: block; }
+.amp-prod-list-price .FCPriceOriSale *{ font-size: .8rem; }
+.amp-prod-list-price .FCPriceSale, .amp-prod-list-price .FCPriceProd{ font-weight: bold; }
+.amp-prod-list-price .FCPriceProd .FCCurrencyLabel, .amp-prod-list-price .FCPriceProd .FCPriceCent, .amp-prod-list-price .FCPriceSale .FCCurrencyLabel, .amp-prod-list-price .FCPriceSale .FCPriceCent{ font-size:.9rem; }
+.amp-prod-list-review{ margin-top: 5px; }
+.NotaOpiniaoVazio{width:20px !important;height:20px !important;background-image:url('<PathTo file="images/amp-star-empty.svg">') !important; background-size: 100% !important; background-repeat: no-repeat !important;}
+.NotaOpiniaoMeio{width:20px !important;height:20px !important;background-image:url('<PathTo file="images/amp-star-half.svg">') !important; background-size: 100% !important; background-repeat: no-repeat !important;}
+.NotaOpiniaoCheio{width:20px !important;height:20px !important;background-image:url('<PathTo file="images/amp-star.svg">') !important; background-size: 100% !important; background-repeat: no-repeat !important;}
+.EstOpiniaoNota{ width: 25%; }
+#idPaginationProdFC{ padding: 0 20px; border-top:1px solid #ccc; }
+#idPaginationProdFC{ display: flex; align-items: center; justify-content: center; }
+#idMiddlePageFC{ display: flex; justify-content: center; }
+#idMiddlePageFC{ margin-top:25px; margin-bottom:25px; }
+#idMiddlePageFC a, #idCurrentPageFC{ border-radius: 5px; background-color: #ddd; padding: 5px 0; margin-right: 5px; text-align: center; font-size: .8rem; width: 25px; color: #555; font-weight: bold; max-height: 25px; }
+input#TextoBuscaNews { border-radius: 5px; }
+select#Any { border-radius: 5px; }
+div#TabCesta form { display: flex; margin: 0 auto 30px; }
+sss .FCNews #idNotFoundNewsFC:before { content: 'Desculpe ! '; display: block; font-size: 28px; color: #FF5722; }
+.FCNews #idNotFoundNewsFC { margin: 40px 0 20px 0; text-align: center; font-size: 15px; }
+.FCNews #idPreviousPageFC a:hover, .FCNews #idNextPageFC a:hover { background: <tag-FCCSSMainColor>; color: #ffffff; text-decoration: none; }
+#idCurrentPageFC{ background-color: #555; color: #fff; }
+span.StySubTitNews { font-size: 14px; }
+div#idNextPageFC img { position: relative; top: 3px; }
+div#idPreviousPageFC img { position: relative; top: 4px; }
+#idPreviousPageFC, #idNextPageFC{ width: 30px; height: 30px; }
+#idPreviousPageFC,#idNextPageFC{ position:relative; }
+
+/* ProdDet */
+.amp-prod-det-video{ margin-top: 15px; margin-bottom: 15px; }
+.amp-prod-det-video iframe{ width: 100%; height: auto; }
+.amp-prod-det-img{ position: relative; width: 300px; height: 300px; margin: 0 auto; }
+.amp-prod-det-name{ font-size: 1.5rem; font-weight: normal; margin-bottom: 0; font-family: 'Roboto'; text-align: center; }
+.amp-prod-det-descr{ color: #777; font-size: .9rem; margin-top: 15px; font-family: 'Roboto'; }
+.amp-prod-det-ref{ font-weight: bold; color: #555; }
+.amp-prod-det-price .FCPriceProd, .amp-prod-det-price .FCPriceSale{ font-size: 1rem; font-weight: bold; }
+.amp-prod-det-price .FCPriceSale .FCCurrencyLabel{ font-size: 1.5rem; }
+.amp-prod-det-price .FCPriceSale .FCPriceInt, .amp-prod-det-price .FCPriceProd .FCPriceInt{ font-size: 2rem; }
+.amp-prod-det-price .FCPriceProd .FCPriceCent, .amp-prod-det-price .FCPriceSale .FCPriceCent{ font-size: 1.5rem; }
+p#idPriceGridFC b { color: #000; }
+.amp-prod-det-btn{ color: #fff; display: block; background-color: #1c9a31; padding: 10px; text-align: center; font-weight: bold; width: 200px; margin:15px auto; border-radius: 2px; }
+
+/* Cross-selling */
+.cs-container{ padding-top: 10px; padding-bottom: 10px; border-top:1px solid #ccc; }
+.cs-title, .amp-reviews-title{ text-transform: uppercase; font-size: 1rem; color: #555; margin-bottom:0; font-weight: bold; display: block; } .cs-item{ display: flex; align-items: flex-start; border-bottom:1px solid #ddd; padding-top: 15px; padding-bottom: 15px; } .cs-item:nth-last-child(1){ border-bottom:0; } .EstDivFotoProdCross{ width: 80px; height: 80px; } .cs-item-price{ color: #1c9a31; font-weight: bold; margin-top: 10px; } .cs-item-price-currency, .cs-item-price-cent{ font-size: .8rem; } /* Old CSS Code*/ .ProductStyleVideoFC iframe{ max-width: 100%; height: auto; margin-top: 15px; min-height: 280px; } .ProductStyleDetprice .FCPriceInt{ font-size:2rem; color:#000; font-family: 'Roboto'; } .ProductStyleDetprice .ProductStyleDetprice .FCCurrencyLabel{ font-size:1.5rem; color:#000; } span#idCodProdGrid { font-family: 'Roboto'; } .RateProdHome { margin: 0 auto; } span#idCodProdGrid { font-family: 'Roboto'; margin: 0 auto; display: block; } .RateProdHome table { margin: 0 auto; } .DivDetRef{ margin: 0 auto; } span#idCodProdGrid { font-family: 'Roboto'; margin: 0 auto; display: block; width: 57px; } body.FCProduct.ProductDet .ProductStyleDetprice span.FCPrice { margin: 0 auto; text-align: center; display: block; } .DivDetCat{ font-size: 0.8rem; font-weight: 400; } .CatSeeMoreFC a { background: <tag-FCCSSMainColor>; width: 85px; padding: 0 10px; border-radius: 20px; color: #fff; } .CatSeeMoreFC a:visited { color: #fff; } .prod-info.DivDetCat a { color: #424242; } .prod-price{ margin-top:15px; margin-bottom:5px; } .FCResumeProduct{ display: none !important; } .FCBtnEsgotadoGrid, .FCBtnConsultenos, .FCBtnComprarGrid, .FCBtnSelecioneGrid{ margin:0 auto !important; float: none !important; } h2.GlobalTitleSepBG { position: relative; z-index: 1; text-align: center; color: #555; display: table; width: 100%; } h2.GlobalTitleSepBG span { background: #FFFFFF none repeat scroll 0 0; padding: 0 15px; font-family: 'Roboto'; } h2 .GlobalTitleSizeSep { font-size: 1.2rem; } h2.GlobalTitleSepDoubleLine:after { border-bottom: 1px solid #d5d5d5; -webkit-box-shadow: 0 1px 0 0 #d5d5d5; -moz-box-shadow: 0 1px 0 0 #d5d5d5; box-shadow: 0 1px 0 0 #d5d5d5; content: ""; margin: 0 auto; position: absolute; top: 45%; left: 0; right: 0; width: 100%; z-index: -1; } .prod-det-cat-tags{ margin-top:10px; margin-bottom:35px; } .DivDetBtnRelease { margin: 10px auto 10px; } span.EstParc { text-align: center; display: block; margin: 0 auto; } img.BotLancProd { width: 180px; margin: 0 auto; display: block; } .GlobalSavePrice { text-align: center; } #idTitPagFC{ margin-top: 10px; } .ProductList #idTitPagFC{ margin-left: 10px; } .ProductList #idTxtIntroFoundProdsFC{ margin-top: 0; margin-bottom: 30px; } /* ProdNotFound */ .amp-carousel-container{ padding-bottom: 15px; padding-left:20px; padding-right:20px; color: #333; } .amp-notfound-search{ font-weight: bold; display: block; margin-top: 15px; margin-bottom: 15px; color: #555; }
+
+/* CrossSelling - EstiloProduto.htm */
+#idTitProdCrossFC{display:none;}
+.DivCrossSelling{width:100%;float:left;margin-top:30px;border-top:0px;}
+#idTitProdCrossFC{color:#fcfcfc;font-size:1.2em;font-weight:bold; margin:10px 0 10px 10px;text-align:left;}
+#idProdCrossFC {margin:0;width:100%;background-color:#FFFFFF;}
+#idProdCrossFC ul li{display:inline-block;padding:12px;margin:0px 0px 0px 5px;}
+#idListProdCrossFC{overflow:hidden;height:238px;position:relative;}
+#idListProdCrossFC li{margin:0 5px 0 5px;width:19.5%;min-width:150px;height:228px;border:0;border-radius:3px;}
+#idProdCrossFC li{list-style-type:none;margin:0;padding:0 0 0 0;}
+.EstImageProdCross{text-align:center;margin:5px;height:59%;background-color:#FFFFFF;border:0;}
+.EstImageProdCross img{height:100%}
+.EstCatProdCross{text-align:center;margin:0 0 5px 0;font-size:12px;font-family:'Roboto',Arial;font-weight:400;line-height:17px;color:#FFFFFF;display:none;}
+.EstRefProdCross{display:block;font-family:'Roboto',Arial;font-weight:300;color:#555555;}
+.EstNameProdCross{font-size:12px;line-height:17px;margin-bottom:5px;display:block;height:54px;font-family:'Roboto',Arial;font-weight:700;text-align:center;}
+.EstNameProdCross a{display:block;height:36px;overflow:hidden;color:#000;}
+.EstPriceProdCross{text-align:center;margin:0 0 8px 0;font-size:14px;font-family:'Roboto',Arial;font-weight:700;background-color:#FFFFFF;border:0;}
+.EstDescrProdCross{display:none;font-size:10px;text-align:center;margin:100px 0 0 0;display:block;cursor:pointer !important;border:0;}
+.EstDescrProdCross span{display:none;overflow:hidden;height:33px;display:block;}
+#EstCommentsTxt{font-size:18px;padding:9px 0;text-align:left;height:30px;display:block;margin:0 0 5px 0;background:#FFFFFF;color:#000;}
+span#idEstNoCommentsClickProdOpFC a {background: <tag-FCCSSMainColor>; padding: 2px 6px; border-radius: 5px; color: #fff; font-size: 14px;}
+
+/* Review */
+#idEstLinhaProdOpFC{display:none}
+#EstCommentsTxt{font-weight:700;position:relative;left:-3px;}
+#idEstNoCommentsClickProdOpFC a{font-weight:700;}
+#idRateProdInfoFC .EstNomeProd a{font-weight:700;font-size:1.5em;}
+#idRateProdInfoFC .EstRefProd .EstRateRefProd{font-weight:300;font-size:0.8em;margin:5px 0px 5px 0px}
+#idRateProdInfoFC .EstRefProd .EstRateCatProd{font-weight:400;font-size:1em;}
+.EstPoliticaOpiniao{margin:10px 0 50px 0;}
+.EstPoliticaOpiniao a{font-weight:700;}
+#FCFormContainer .FCRateClientInfo{line-height:20px;}
+#FCFormContainer .FCRatePermissionEmail{font-weight:400;font-size:0.9em;}
+#FCFormContainer .FCRatePermissionEmail label{position:relative;top:2px;}
+.EstOpiniaoLocal{font-weight:300;font-size:0.9em;}
+.EstOpiniaoTexto{font-weight:300;font-size:.9rem;color: #555;}
+.FCRateProd td{vertical-align:middle;}
+.RateProd{float:right;margin:5px 0 20px 0;}
+
+/* Style Product Order */
+.FCTrack .amp-main{padding-bottom: 20px;}
+.EstTabPedidoTit{font-size:8pt;font-weight:bold;background:#dfdfdf;color:#000000;}
+.EstTabPedidoNome{font-size:8pt;font-weight:bold;color:#333333;}
+.EstTabPedidoNome:visited{color:#333333}
+.EstTabPedidoNome:hover {color: <tag-FCCSSMainColor>;}
+.EstTabPedido{font-size:8pt;background:#f4f4f4}
+.EstTabPedidoNum{font-size:8pt;background:#f4f4f4;}
+.EstTabPedidoTotal{font-size:8pt;font-weight:bold;background:#efefef;}
+.EstTabPedidoFrete{font-size:8pt;font-weight:bold;background:#F4F4F4;}
+.Ffrete {width: 100%;margin: 0 auto;}
+.EstTabPedidoBot{font-size:8pt;font-weight:bold;color:#000000;}
+.EstTabPedidoRef{font-size:8pt;color:#000000;line-height: 25px;}
+.EstTabPedidoAdicNome{font-size:8pt;}
+.EstTabPedidoAdicItem{font-size:8pt;font-weight:bold}
+.EstTextoQtd{font-size:8pt;text-align:right}
+.EstContinuarComprando{font-size:9pt;font-weight:bold;color:#990000}
+.FreightContainerFC{margin: 30px 0 !important;}
+.EstTabPedido .EstFotoProdCesta{border:1px solid #ccc;}
+.FreightTxtOnlyBR{float:left;clear:both;text-align:center;margin-top:7px;max-width:254px;padding:7px 5px;background:#0E72D2;color:#ffffff;font-weight:bold;font-size:0.75em;vertical-align:middle;line-height:18px;}
+.FreightTxtOnlyBR img{vertical-align:middle;margin-right:5px;}
+
+/* Checkout passo a passo */
+.FCPayment #TabRadio .EstTabPedidoTit{font-size:18px;font-family:'Roboto',Arial,sans-serif;font-weight:400;}
+.FCPayment #TabRadio .EstTabPedido{font-size:18px;font-family:'Roboto',Arial,sans-serif;font-weight:400;}
+#idTabEnvioFC{padding:20px;margin:34px auto;}
+#idTabEnvioFC td{vertical-align:middle;padding:5px 5px;font-size:16px !important;font-family:'Roboto',Arial,sans-serif !important;font-weight:400;}
+#idTabEnvioFC input{font-size:16px !important;font-family:'Roboto',Arial,sans-serif !important;font-weight:400;}
+#idTabEnvioFC #idTDTxtEnvioFC{font-size:22px;font-family:'Roboto',Arial,sans-serif;font-weight:400;}
+#idTabEnvioFC #idInputCEPFC{font-size:22px;font-family:'Roboto',Arial,sans-serif;font-weight:400;width:130px !important;}
+#idTabBotPreviousNextFC {height:50px;padding:40px 0 40px 0;}
+#idTabBotPreviousNextFC #idTxtBotPreviousPageFC{text-align:center;width:80px;padding:15px 30px 15px 30px;cursor:pointer;font-size:16px;font-weight:normal;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-transform:uppercase;font-family:'Roboto',Arial,sans-serif;font-weight:400;background-color:#e4e5e5;color:#555555;}
+#idTabBotPreviousNextFC #idTxtBotPreviousPageFC:hover{text-decoration:none;}
+#idTabBotPreviousNextFC #idTxtBotNextPageFC{text-align:center;width:80px;padding:10px 30px 10px 30px;cursor:pointer;font-size:16px;font-weight:normal;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-transform:uppercase;font-family:'Roboto',Arial,sans-serif;font-weight:400;background-color:#52d14c;color:#ffffff;}
+#idTabBotPreviousNextFC #idTxtBotNextPageFC:hover{text-decoration:none;}
+#idTabBotPreviousNextFC #idPreviousPageFC a{text-decoration:none;}
+#idTabBotPreviousNextFC #idNextPageFC a{text-decoration:none;}
+#idTabBotPreviousNextFC #idImgBotPreviousPageFC{display:none;}
+#idTabBotPreviousNextFC #idImgBotNextPageFC{display:none;}
+.BotVerMais{cursor:hand;font-size:9pt;font-family:tahoma,verdana,arial;font-weight:bold;text-decoration:none;margin-top:12px;}
+.FCRegister #idTxtBotNextPageFC, .FCRegister .TxtBotVerMais{visibility: visible;}
+
+/* Style CADASTRO DE CLIENTES, AJUDA, CONFIRMAÇÃO DO PEDIDO */
+.EstTabTopo{padding:5px 2px 5px 2px;font-size:12px;font-weight:bold}
+.FCRegister .EstTabTopo{padding:10px 0 10px 0;font-size:16px;background:#dedede;}
+.FCRegister #idTabRequiredFieldFC{display:none;}
+.FCRegister #idTabRegisterFC select{min-height:27px;border:1px solid #cacaca;}
+.FCRegister #idTabRegisterFC #P2Estado{width:45px !important;}
+.FCRegister #idTabRegisterFC input[type='text'], .FCRegister #idTabRegisterFC input[type='password']{padding:0 10px !important;min-height:27px !important;border:1px solid #cacaca;}
+.FCRegister #idTabRegisterFC td table{border-spacing: 0 !important;}
+.FCRegister #idTabRegisterFC td{padding: 5px 0;}
+#idCalendNascFC img{margin: 0 3px;}
+.FCHelp p{line-height:20px;}
+.FCHelp #idHelpFC .EstTabTopo{font-size:.9rem;margin:20px 0px 10px -13px;background-color:#eeeeee;padding:15px 0px 15px 7px}
+.FCHelp #idHelpFC .StyRatePolicies{line-height:20px;}
+.FCHelp #idHelpFC .StyRatePolicies{line-height:20px;}
+
+.FCNewsletter #idTxtOptNewsYesFC{position:relative;top:3px;}
+.FCNewsletter #idTxtOptNewsNoFC{font-size:0.8em;position:relative;top:2px;}
+
+/* ZipCode - EstiloProduto.htm */
+#idDivCEPFC{box-sizing:border-box;font-family:'Roboto',verdana,arial;font-weight:400;margin-bottom: 50px;margin-top: 30px;}
+#idDivTitCEP{font-size:0.8em;font-family:'Roboto',verdana,arial;font-weight:400;margin-bottom:5px;font-size:14px;text-align:center;}
+.FieldCEPQty{box-sizing:border-box;padding:0 5px;margin:0 3px 0 0;border:1px solid #cacaca;}
+.FieldCEP.FieldCEPNum {width: 59%;}
+.FieldCEPQty input{width: 50px;margin:0 0 0 10px;border:0;text-align:center;height:28px;}
+.FieldCEPNum input{width:100%;padding-left:10px;height:30px;}
+#idDivContentFieldsCEP {border-top: 0px solid #dedede; width: 100%;}
+.FieldCEPBtn{height:30px;color:#FFFFFF;font-family:'Roboto',verdana,arial;font-weight:700;cursor:pointer;color:#FFFFFF;}
+.FieldCEPBtn, .FieldCEPQty, .FieldCEPNum{float:left;}
+#idDivTitCEP span{padding:0 0 0 10px;position:relative;top:-8px;}
+#idDivCEPCalc{margin:0px 0;padding:10px 0;    display: flex;}
+#idDivCEPButton button{background-color:#dedede;color: #555555;transition:background-color 0.2s ease;width:100%;border-radius:5px;-webkit-border-radius:5px;-moz-border-border-radius:5px;border:none;padding:10px 25px 10px 25px;cursor:pointer;font-family:'Roboto',verdana,arial;font-weight:700;font-size:18px;}
+#idDivCEPButton button:hover {background-color:#eeeeee;}
+#idDivImgLoadingCEPFC{width:100%;margin-top:10px;text-align:center;}
+#idDivContentFieldsCEP{border-top:0px solid #dedede;}
+.ZipName{font-size:0.8em;font-family:'Roboto',verdana,arial;font-weight:400;font-weight:bold;}
+.ZipObsVal{font-size:0.7em}
+.ZipValue{font-size:0.8em;font-weight:bold;color:<tag-FCCSSMainColor>;}
+.ZipOption:first-child{border-top:0;}
+.ZipOptions{width:100%;display:table;text-align:left;margin:0 0 0 0;clear:both;}
+.ZipOption{width: 100%;  display: table; padding: 4px 0; border-top: 1px solid #dedede; margin: 30px auto -30px;}
+.ZipNameObs{width:70%;float:left;}
+.ZipValue{width:30%;float:left;}
+.zip-container{margin-top:30px;max-width:500px;padding:10px;border:1px solid ;}
+.FieldCEP label{font-size:12px;font-family:'Roboto',verdana,arial;font-weight:400;}
+.freightResult{display:block;margin:54px 0 0 0;text-align:left;}
+.inputsContainer input[type="text"], .inputsContainer input[type="email"], .inputsContainer input[type="password"], .inputsContainer textarea, .inputsContainer select { border-radius: 5px; }
+div#idMyAccountFC a { background: <tag-FCCSSMainColor>; padding: 5px 11px; border-radius: 5px; color: #fff; }
+div#idMyAccountFC p { font-family: 'Roboto'; }
+
+/* Color for cart out of stock */
+.EstQtdInv td{background:#ffe6e6 !important}
+.EstQtdInv .FCCartQtyInput{background:#fff;border:1px solid red;}
