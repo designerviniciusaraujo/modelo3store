@@ -1,0 +1,88 @@
+<!-- slide home topo -->
+<div class="swiper-container-banners">
+  <div class="swiper-wrapper"> 
+    <div class="swiper-slide"><a class="amp-link-cats" href="<PathAMP url="/prod,idloja,<idloja>,promocao,1,ofertas.htm">"><img layout="responsive" width="600" height="auto" alt="Menu do Site" src="<PathTo file="images/amp-banner-mobile.jpg">"></a></div> 
+    <div class="swiper-slide"><a class="amp-link-cats" href="<PathAMP url="/prod,idloja,<idloja>,promocao,1,ofertas.htm">"><img layout="responsive" width="600" height="auto" alt="Menu do Site" src="<PathTo file="images/amp-banner-mobile.jpg">"></a></div> 
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> 
+</div>
+<!-- slide home topo -->
+
+<!-- Banners Topo -->
+<div class="amp-topo-banners">
+  <a href="<PathAMP url="/prod,idloja,<idloja>,promocao,1,ofertas.htm">">
+    <div class="ban One"> 
+      <img alt="Banner Promoções" src="<PathTo file="images/percent.svg">">
+      <span>Promoções</span>
+    </div>
+  </a>
+  <a href="/ajuda.asp?idloja=<IDLoja>&useamp=1">
+    <div class="ban Two">  
+      <img alt="Banner Entrega Rápida" src="<PathTo file="images/entrega.svg">"> 
+      <span>Entrega Rápida</span>
+    </div>
+  </a>
+  <a href="/ajuda.asp?idloja=<IDLoja>&useamp=1">
+    <div class="ban Three"> 
+      <img alt="Banner Segura" src="<PathTo file="images/lojasegura.svg">"> 
+      <span>Loja 100% Segura</span>
+    </div>
+  </a>
+</div>
+<!-- Banners Topo -->  
+<div class="amp-home-section">
+  <a href="<PathAMP url="/prod,idloja,<idloja>,promocao,1,ofertas.htm">" class="amp-home-section-title">Promoções</a>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<div class="amp-home-section">
+  <a href="<PathAMP url="/page,idloja,<idloja>,arq,highlights.htm">" class="amp-home-section-title">Destaques</a>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <prod out="p1" em="capa,rand">
+      <prod out="p1" em="capa,rand">
+      <prod out="p1" em="capa,rand">
+      <prod out="p1" em="capa,rand">
+      <prod out="p1" em="capa,rand">
+      <prod out="p1" em="capa,rand">
+    </div> 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<div class="amp-home-section">
+  <a href="<PathAMP url="/prod,idloja,<idloja>,lancamento,1,novidades.htm">" class="amp-home-section-title">Lançamentos</a>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+      <prod out="p1" em="prom,rand">
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<script>
+setTimeout(function(){
+  carousel.swipers.home();
+  carousel.swipers.banners();
+},1000);
+</script>
