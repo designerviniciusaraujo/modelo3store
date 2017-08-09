@@ -1,0 +1,49 @@
+<div class="FCCheckoutLogin"><Login></div>
+<div class="FCCheckoutMain">  
+  <div id="idChkTopFC" class="FCChkOrderConfirmationFloat"><OrderConfirmation></div>  
+  <div id="idChkCol1FC" class="FCRegisterChk">
+    <Register>
+  </div>
+  <div id="idChkCol2FC" class="FCFreightChk">
+    <span id="idChkIniCol2FC"></span>
+    <div id="idChkTagsCol2FC"><OrderCompletion><Freight><Payment></div>
+  </div>
+  <div id="idChkCol3FC" class="FCCartChk"><Cart></div>
+  <div id="idChkBottomFC"></div>
+</div>
+
+<script>
+function FuncChkRegisterEnd(){
+  //LOGIN
+  if(F$.Step==0){ 
+    jQuery('#idCheckoutFC .EstTitCheckoutFC').css({'background': 'transparent'});  
+    jQuery('#idTitRegisterFC').html("<h5 class='zFLoginChkTit'>Login</h5>"); 
+  }
+   if(F$.Step==2){
+    window.onscroll=null;
+    document.getElementById('idChkTagsCol2FC').style.position='relative';
+    document.getElementById('idChkExtCartFC').style.position='relative';  
+  }
+   //ORDER CONFIRMATION
+  if(F$.Step==2){
+    jQuery('#idTitCartFC').css({'background-color':'#F1F1F1'});
+    jQuery('#idTitCartFC').css({'padding':'8px 3px 8px 15px'});
+    jQuery('#idTitCartFC').css({'height':'auto'});
+    jQuery('#idTitCartFC').css({'font-size':'12px'});
+    jQuery('#idTitCartFC').css({'text-align':'left'});
+    var elem = document.querySelector("#idChkTabRegisterFC .EstChkTabTopo");
+    elem.className += " finish-checkout-style";
+    jQuery('#idTitCartFC').css({'background':'#F1F1F1'});
+    var elem = document.querySelector("#idChkCartIntFC .EstTitCheckoutFC");
+    elem.className += " resume-prod";
+  }
+
+  }
+  
+  function FuncChkRegisterBegin(){
+  if(F$.Step==1 && (F$.FreightValue=='' || F$.FreightValue==null))F$.GetID("idChkPaymentFC").innerHTML="<div id=idChkPaymentIntFC class=EstChkDiv><div id=idTitPaymentFC class=EstTitCheckoutFC>Pagamento</div><p>As op&ccedil;&otilde;es de pagamento ser&atilde;o exibidas ap&oacute;s a etapa da escolha do frete.</p></div>";
+}
+function FuncChkFreightEnd(){
+  if(F$.Step==1 && (F$.FreightValue=='' || F$.FreightValue==null))F$.GetID("idChkPaymentFC").innerHTML="<div id=idChkPaymentIntFC class=EstChkDiv><div id=idTitPaymentFC class=EstTitCheckoutFC>Pagamento</div><p>As op&ccedil;&otilde;es de pagamento ser&atilde;o exibidas ap&oacute;s a etapa da escolha do frete.</p></div>";
+}
+</script>
