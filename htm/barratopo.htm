@@ -1,0 +1,270 @@
+<!-- Includes CSS -->
+<link rel="stylesheet" href="/wave/v3/wavemin.css?cccfc=1">
+<script>
+   FCLib$.loadAsyncCSS('<PathTo file="htm/css/jquery_ui.css">');
+   FCLib$.loadAsyncCSS('<PathTo file="htm/css/fastpreview.css">');
+</script>
+<!-- JS -->
+<!--[if IE]>
+<style type="text/css">.ui-autocomplete-category{margin-top: -2px}</style>
+<![endif]-->
+<!-- Includes Javascript --> 
+<script src='<PathTo file="htm/jurosparcelas.js">'></script>
+<script src='<PathTo file="htm/lojalib.js">'></script>
+<script src='<PathTo file="htm/js/autosuggesttbar.js">'></script>
+<script src='<PathTo file="htm/js/autosuggest.js">'></script>
+<script src='<PathTo file="htm/js/scrolltothetop.js">'></script>
+<script src='<PathTo file="htm/js/tinynav.js">'></script>
+<script language=JavaScript src=<BaseLoja>htm/SimulaFreteFC.js></script>
+<script>iItensCesta=<QtdCesta>;</script> 
+<!-- Begin: Toolbar -->
+<div class="FCToolBar">
+   <div class="MainContainer">
+      <div class="col-medium-3 col-large-3">
+         <a href="<StoreDomain>">
+            <div class="FCToolBarLogo">
+               <img alt="<NomeLoja>" src="<PathTo file="images/logo.svg">">
+            </div>
+         </a>
+         <div class="FCmenureturn">
+            <a href="/categorias.asp?idloja=<IDLoja>">Departamentos</a>
+         </div>
+      </div>
+      <!-- Begin Tolbar busca -->
+      <div class="col-medium-8 col-large-7">
+         <form name="TopSearchToolbarForm" id="autocomplete-form-toolbar" class="FCToolBarForm" method="GET" action="/listaProdutos.asp">
+            <input type="hidden" name="IDLoja" value="<IDLoja>">
+            <input type="hidden" name="Digitada" value="True">
+            <input type="text" id="autocomplete-toolbar" value="" name="Texto" class="InputTextBusca ui-autocomplete-input" placeholder="Digite sua busca aqui" autocomplete="off">
+         </form>
+         <a href="#search" onclick="sF$.fnSearchToolbarSubmit(document.TopSearchToolbarForm);" class="btn1 btn-sent FCToolBarButton">
+            <span class="HeaderSerachIMGIconFC">
+               <img64 src="<Baseloja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" title="Buscar">
+            </span>
+         </a>
+         <div class="col-large-2 col-medium-1 avanced-searc">
+            <span class="advanced medium-hidden col-small-hidden"><a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a></span>
+         </div>
+      </div>
+      <!-- Begin Tolbar busca -->
+      <div class="col-medium-2 TolCart">
+         <!-- Begin Tolbar Carrinho -->
+         <div class="HeaderCartMainFC ToolBarCart">
+            <a href="/addProduto.asp?idloja=<IDLojaNum>">
+               <div class="HeaderCartMainIconFC">
+                  <img64 src="<Baseloja>images/iconshopcart.svg" plain="true" width="35" height="35">
+               </div>
+            </a>
+            <a href="/addProduto.asp?idloja=<IDLojaNum>">
+               <div class="HeaderCartMainItemTotalFC">
+                  <div id="HeaderCartItemFC"><span id="idCartItemsToolTop">0</span></div>
+                  <div id="HeaderCartTotalFC"><span id="idCartTotalToolTop">R$ 0,00</span></div>
+               </div>
+            </a>
+         </div>
+         <!-- Begin Tolbar Carrinho -->
+      </div>
+   </div>
+</div>
+<!--End of Button 5 -->
+<script>var w=jQuery(window).width();w>1024&&ToolbarCartExec();</script>
+<!-- End: Toolbar -->   
+<div class="FCtopo">
+   <div class="MainContainer">
+      <div class="col-small-3 col-medium-6 col-medium-hidden">
+         <!-- Begin Main Menu -->
+         <div class="drop-menu">
+            <div class="container">
+               <div class="col-small-12 menu-container-mob"></div>
+            </div>
+         </div>
+         <!-- Menu Mobile --> 
+      </div>
+      <div class="col-small-6 col-medium-3"><a href="/home.asp?idloja=<IDLoja>">
+         <img class="logo" src="<PathTo file="images/logo.svg">"></a>
+      </div>
+      <div class="col-small-3 col-medium-9 cart">
+         <!-- Begin: Login -->    
+         <ul class="HeaderContainerSocialLoginUL">
+            <li class="HeaderContainerSocialLoginIconUser">
+               <img id="UserImage" src="<PathTo file="images/iconuser.svg">" width="20" height="20" alt="Login usuário">&nbsp;
+            </li>
+            <li class="HeaderContainerSocialLoginPosition" id="Header_SocialLogin_NamePosition">
+               <span class="loginInfo"></span><script>sF$.fnLoginUserName("<NomeCliente>","<FotoCliente>");</script>
+            </li>
+            <li class="HeaderContainerSocialLoginGlobalSingIcons"><span class="activity" id="idImgGlobalSignFC"></span></li>
+         </ul>
+         <div class="row">
+            <div class="col-acess col-small-hidden">
+               <li class="col-small-hidden medium-hidden Tplink">
+                  <div class="direita">
+                     <a href="/account.asp?idloja=<IDLoja>#Orders"> 
+                     <button class="btnicon"><span>Meus Pedidos</span></button> 
+                     </a>
+                  </div>
+                  <div class="esquerda">
+                     <a href="/faleconosco.asp?idloja=<IDLoja>">
+                     <button class="btnicon"><span>Contato</span></button>
+                     </a>
+                  </div>
+               </li>
+            </div>
+         </div>
+         <!-- End: Login --> 
+         <!-- Begin: Carrinho -->
+         <a href="/addProduto.asp?idloja=<IDLojaNum>">
+            <div class="HeaderCartMainIconFC">
+               <img src="<PathTo file="images/iconshopcart.svg">" width="35" height="35">
+            </div>
+         </a>
+         <a href="/addProduto.asp?idloja=<IDLojaNum>" class="CartItens">
+            <div class="HeaderCartMainItemTotalFC">
+               <div id="HeaderCartItemFC"><span id="idCartItemsTop"></span></div>
+               <div id="HeaderCartTotalFC"><span id="idCartTotalTop"></span></div>
+            </div>
+         </a>
+         <script>FCLib$.onReady(function(){sF$.fnUpdateCart(false,false);});</script>
+         <!-- End: Carrinho --> 
+      </div>
+      <div class="col-small-12 col-medium-9 col-large-7 Search">
+         <!-- Begin Search --> 
+         <form class="BuscaTopo" name="TopSearchForm" method="GET" id="autocomplete-form" action="/listaprodutos.asp">
+            <input type="hidden" name="idloja" value="true">
+            <input type="hidden" name="digitada" value="true">
+            <div class="HeaderSearchFC">
+               <div id="DivSearch" class="collapse">
+                  <div class="col-small-10 col-medium-10 col-large-10 col-xlarge-10">
+                     <input type="text" id="autocomplete" value="" name="Texto" class="InputTextBusca" placeholder="Digite sua busca aqui">
+                  </div>
+                  <div class="col-small-2 col-medium-2 col-large-2 col-xlarge-2">
+                     <a href="#search" onclick="sF$.fnSearchSubmit(document.TopSearchForm);" class="btn1 btn-sent HeaderIconSearchButtonFC">
+                        <span class="HeaderSerachIMGIconFC">
+                           <svg width="25" height="25" alt="Buscar" title="Buscar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+                              <path fill="#FFF" d="M2.915 29.875l-2.728-2.73a.643.643 0 0 1 0-.908l7.52-7.52a12.066 12.066 0 0 1-1.942-6.567C5.765 5.45 11.215 0 17.912 0c6.7 0 12.15 5.45 12.15 12.148 0 6.7-5.45 12.148-12.15 12.148-2.42 0-4.67-.72-6.564-1.943l-7.52 7.52a.647.647 0 0 1-.913.002m14.997-9.438c4.572 0 8.29-3.717 8.29-8.29s-3.718-8.288-8.29-8.288c-4.57 0-8.287 3.716-8.287 8.288s3.717 8.29 8.287 8.29"></path>
+                           </svg>
+                        </span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </form>
+         <!-- End Search -->    
+      </div>
+      <div class="col-large-2 col-medium-1 avanced-searc">
+         <span class="advanced medium-hidden col-small-hidden"><a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a></span>
+      </div>
+   </div>
+   <!--Maincontainer-->  
+</div>
+<!--FCtopo-->
+<!-- Begin: Menu Desktop  -->
+<nav id='cssmenu'>
+   <div id="head-mobile"></div>
+   <div class="MainContainer navmenu">
+      <div class="button"></div>
+      <ul class="onedown">
+         <li>
+            <a href='/home.asp?idloja=<IDLoja>' class="Item">
+            <img alt="Home" src="<PathTo file="images/home.svg">">
+            <span>Home</span>
+            </a>
+         </li>
+         <li>
+            <a href='/listaprodutos.asp?idloja=<IDLoja>&promocao=true'><img alt="Promoções" src="<PathTo file="images/icon-promocao.svg">">
+            <span>Promoções</span></a>
+         </li>
+         <li>
+            <a href='/categorias.asp?idloja=<IDLoja>'><img alt="Departamentos" src="<PathTo file="images/icon-departamentos.svg">">
+            <span>Departamentos</span></a>
+         </li>
+         <li>
+            <a href='/listaprodutos.asp?idloja=<IDLoja>&lancamento=true'><img alt="Lançamentos" src="<PathTo file="images/icon-lancamentos.svg">">
+            <span>Lançamentos</span></a>
+         </li>
+         <li>
+            <a href='/noticias.asp?idloja=<IDLoja>'>
+            <img alt="Notícias" src="<PathTo file="images/icon-noticias.svg">">
+            <span>Notícias</span></a>
+         </li>
+         <li>
+            <a href='/ajuda.asp?idloja=<IDLoja>'><img alt="Ajuda" src="<PathTo file="images/icon-ajuda.svg">">
+            <span>ajuda</span></a>
+         </li>
+      </ul>
+   </div>
+</nav>
+<!-- end: Menu Desktop :end -->
+<!-- Begin:Banner Home -->
+<div id="FC-ShowHomeBanners"></div>
+<!-- End:Banner Home -->
+<div class="FullSpaceFC"></div>
+<script type="text/javascript">
+   (function($) {
+   $.fn.menumaker = function(options) {  
+    var cssmenu = $(this), settings = $.extend({
+      format: "dropdown",
+      sticky: false
+    }, options);
+    return this.each(function() {
+      $(this).find(".button").on('click', function( e ){ 
+        $(this).toggleClass('menu-opened');
+        var mainmenu = $(this).next('ul');
+        if (mainmenu.hasClass('open')) { 
+          mainmenu.slideToggle().removeClass('open');
+        }
+        else {
+          mainmenu.slideToggle().addClass('open');
+          if (settings.format === "dropdown") {
+            mainmenu.find('ul').show();
+          }
+        }
+        e.stopPropagation();
+      });
+      cssmenu.find('li ul').parent().addClass('has-sub');
+   multiTg = function() {
+        cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+        cssmenu.find('.submenu-button').on('click', function() {
+          $(this).toggleClass('submenu-opened');
+          if ($(this).siblings('ul').hasClass('open')) {
+            $(this).siblings('ul').removeClass('open').slideToggle();
+          }
+          else {
+            $(this).siblings('ul').addClass('open').slideToggle();
+          }
+        });
+      };
+      if (settings.format === 'multitoggle') multiTg();
+      else cssmenu.addClass('dropdown');
+      if (settings.sticky === true) cssmenu.css('position', 'fixed');
+   resizeFix = function() {
+     var mediasize = 700;
+        if ($( window ).width() > mediasize) {
+          cssmenu.find('ul').show();
+        }
+        if ($(window).width() <= mediasize) {
+          cssmenu.find('ul').hide().removeClass('open');
+        }
+      };
+      resizeFix();
+      return $(window).on('resize', resizeFix);
+    });
+     };
+   })(jQuery);
+   
+   (function($){
+   $(document).ready(function(){
+   $("#cssmenu").menumaker({
+      format: "multitoggle"
+   });
+   });
+   
+   })(jQuery);
+   
+</script> 
+<script type="text/javascript">
+   IDLoja='<IDLoja>'; //Obtém IDLoja para montar links
+   IDLojaNum='<IDLojaNum>';
+</script>
+<!-- Begin Aside BarraEsquerda.htm - Close Rodape.htm - Don't remove -->
+<div class="MainContainer">
+<div class="row">
