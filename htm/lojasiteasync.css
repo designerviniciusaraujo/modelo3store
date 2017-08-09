@@ -1,0 +1,177 @@
+/* Fastcommerce - Store 3 Async - 05/2017 (v1) */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,latin-ext);
+
+/* Footer - Rodape.htm */
+.FootterMainBarFC .row { padding: 20px 0 20px 0; clear: both; }
+.FootterMainBarFC .row .title-footer { display: block; margin: 0 auto; text-align: left; margin-bottom: 8px; font-family: 'Open Sans', verdana, arial; font-weight: 600; color: #efefef }
+.FootterMainBarFC .row ul { font-family: 'Open Sans', verdana, arial; font-weight: 400; }
+.FootterMainBarFC .row ul li { list-style: none; text-align: left; padding: 8px 0 8px 0; }
+.FootterMainBarFC .row .FooterAddressFC li { list-style: none; text-align: left; padding: 3px 0 3px 0; float: left; clear: both; }
+.FootterMainBarFC .row .FooterAddressFC .FooterCompanyPhoneFC { list-style: none; text-align: left; padding: 12px 0 0 0; }
+.FooterNewsletterBoxFC { margin-top: 20px; }
+.FooterNewsletterBox { width: 100%; }
+.FooterNewsletterForm { padding: 10px 15px 10px 15px; }
+span .FooterNewsletterInput { height: 38px; font-size: 14px; border: 1px solid #ffffff !important; padding: 0 0 0 10px; width: 170px; }
+.FooterInputPosition { float: left; margin: 0 0 0 0 }
+.FooterInputBtnPosition { margin: 0 0 0 0; }
+.FooterSpaceContainerFC { margin: 10px 0 10px 0 !important; }
+.FooterTecFastCommerce { font-size: 12px; }
+.FooterInfosContainer { margin: 5px 0 !important; }
+.FooterInfosContainer text { font-family: 'Open Sans', verdana, arial; font-weight: 400; }
+.FooterInfosContainer text + text { font-family: 'Open Sans', verdana, arial !important; font-weight: 600; }
+.FooterInfosContainer a:hover path, .FooterInfosContainer a:hover rect, .FooterInfosContainer a:hover circle { transition: fill 0.2s ease; }
+.FooterSepFC img { max-width: 100%; }
+.FooterSepFC { padding: 0 0 30px 0 }
+.FooterAddressFC li { font-size: 12px; }
+.FooterAddressIconFC { position: relative; top: -4px; margin: 0 0 0 0; float: left; }
+.FooterCompanyTxtFC { margin: 0 0 0 3px }
+.FooterTecBoxFC { width: 100%; line-height: 35px; vertical-align: middle; background-color: #efefef; }
+.FooterTecHeightFC { padding: 10px 0 3px 0; }
+.CompanyAddressLine1 { margin: 0 0 0 3px }
+.CompanyAddressLine2 { clear: both; float: left; margin: 2px 0 0 26px }
+.FooterTitleTxt { display: block; font-family: 'Open Sans', verdana, arial !important; font-weight: 600; margin: 0 auto 8px; text-align: left; color: #efefef }
+.FooterULPaymentFC li { display: inline; }
+.FooterULSecurityFC li { display: inline; }
+p.FooterTecFastCommerce a { background: transparent;  color: #424242;}
+
+/* BEGIN: FOOTER EXCLUSIVO MODELO 3 */  
+.FootterMainBarFC .btnicon { border-radius: 4px; background-color: transparent; border: none; color: #FFFFFF; text-align: left; transition: all 0.5s; cursor: pointer; }
+.btnicon span { cursor: pointer; display: inline-block; position: relative; transition: 0.5s; }
+.btnicon span:after { content: '\00bb'; position: absolute; opacity: 0; top: 0; right: -10px; transition: 0.5s; }
+.FootterMainBarFC .btnicon span:after { content: "\00bb"; position: absolute; opacity: 0; top: -1px; left: -10px; transition: 0.5s; }
+.btnicon:hover span { padding-right: 15px; }
+.FootterMainBarFC .btnicon:hover span { padding-left: 15px; }
+.btnicon:hover span:after { opacity: 1; right: 0; }
+.FootterMainBarFC .btnicon:hover span:after { opacity: 1; left: 0; }
+.FullSpaceFC { margin-top: 20px;     margin-bottom: 20px;}
+.FooterAddressFC li { font-size: 14px !important; font-family: 'Roboto'; }
+.FootterMainBarFC { background: #424242 !important; }
+.FootterMainBarFC .row .title-footer { color: #ffffff !important; }
+.FooterSpaceContainerFC { color: #fff; }
+.col-small-12.col-medium-6.col-large-3.col-xlarge-3.text-left.FooterSpaceContainerFC { padding: 0 0; }
+.col-small-12.col-medium-6.col-large-3.col-xlarge-3.text-left.FooterSpaceContainerFC svg { display: none; } 
+span .FooterNewsletterInput { max-width: 100%; border-radius: 5px; }
+.FooterTitleTxt { color: #ffffff !important; }
+.segur { margin: 20px 0 0 !important; }  
+.FooterCompanyTxtFC { margin: 0px !important; }
+.CompanyAddressLine1 { margin: 0px !important; }
+.CompanyAddressLine2 { clear: both; float: left; margin: 10px 0 !important; }
+.FootterMainBarFC .row ul li a { font-size: 14px; font-family: 'Roboto'; }
+.foo-banner { padding-right: 10px; } 
+.foo-banner { max-width: 100%; min-width: 100%; } 
+.FooterInputBtnPosition { margin: 0 0 0 -5px !important; }
+span.CompanyAddress { display: block; width: 100%; }
+span.CompanyNeighborhood { display: block; width: 100%; margin-top: 3px;}
+ 
+	@-webkit-keyframes shine {
+	  100% { left: 125%; }
+	}
+	@keyframes shine {
+	  100% { left: 125%; }
+	}
+	@-webkit-keyframes circle {
+	  0% { opacity: 1; }
+	  40% { opacity: 1; }
+	  100% { width: 200%; height: 200%; opacity: 0; }
+	}
+	@keyframes circle {
+	  0% { opacity: 1; }
+	  40% { opacity: 1; }
+	  100% { width: 200%; height: 200%; opacity: 0; }
+	}
+	@-webkit-keyframes flash {
+	  0% { opacity: .4; }
+	  100% { opacity: 1; }
+	}
+	@keyframes flash {
+	  0% { opacity: .4; }
+	  100% { opacity: 1; }
+	}
+	
+/* END: FOOTER EXCLUSIVO MODELO 3 */ 
+
+/* History */
+#idPageHistory { width: 100%; margin-top: 30px; color: <tag-FCCSSMainColor>; }
+#idDivPageHistory { max-width: 1200px; margin: 0 auto; }
+#idTitPageHistory { font-size: 1.2em; font-weight: bold; margin: 0 0 15px 10px; color: <tag-FCCSSMainColor>; }
+#idPageHistoryFC li { list-style-type: none; margin: 0; padding: 0; vertical-align: top }
+#idPageHistoryFC ul li { display: inline-block; }
+#idListPageHistoryFC li { margin: 0 5px 30px 5px; width: 18%; min-width: 170px; }
+.EstImagePageHistory { background-color: white; text-align: center; margin: 5px; min-height: 100px; background-color: #FFFFFF; border: 0 solid #cecece; }
+.EstImagePageHistory .EstFotoPageHistory { max-width: 100px; max-height: 100px; margin: 2px 0 0 2px; }
+.EstNamePageHistory { text-align: center; margin: 0 0 10px 0; font-family: 'Open Sans', verdana, arial; font-weight: 900; }
+.EstNamePageHistory a { height: 40px; font-size: 14px; text-decoration: none; background-color: #FFFFFF; border: 0 solid #cecece; color: #515967; }
+.EstNamePageHistory a:hover { height: 40px; font-size: 14px; text-decoration: underline; background-color: #FFFFFF; border: 0 solid #cecece; color: #949494; text-decoration: none; transition: 0.3s; }
+.EstPricePageHistory { text-align: center; margin: 0; font-size: 14px; font-family: 'Open Sans', verdana, arial !important; font-weight: 600; background-color: #FFFFFF; border: 0 solid #cecece; color: #5C9E0D; }
+
+/*CrossSelling*/
+.DivCrossSelling { width: 100%; float: left; margin-top: 30px; border-top-style: solid; border-top-width: 1px; border-top-color: #cdcdcd; }
+#idTitProdCrossFC { color: <tag-FCCSSMainColor>; font-size: 1.2em; font-weight: bold; margin: 10px 0 10px 10px; text-align: left; color: <tag-FCCSSMainColor>; }
+#idProdCrossFC { margin: 0; width: 100%; background-color: #FFFFFF; }
+#idProdCrossFC ul li { float: left; display: inline-block; padding: 12px; }
+#idListProdCrossFC { overflow: hidden; height: 248px; position: relative; }
+#idListProdCrossFC li { margin: 0 5px 0 5px; width: 20%; min-width: 170px; height: 248px; }
+#idProdCrossFC li { list-style-type: none; margin: 0; padding: 0 0 0 0; }
+.EstImageProdCross { text-align: center; margin: 5px; height: 59%; background-color: #FFFFFF; border: 0 solid #cecece; }
+.EstImageProdCross img { height: 100% }
+.EstCatProdCross { text-align: center; margin: 0 0 5px 0; font-size: 12px; font-family: 'Open Sans', verdana, arial; font-weight: 400; line-height: 17px; color: #333333; }
+.EstRefProdCross { display: block; font-family: 'Open Sans', verdana, arial; font-weight: 400; color: #333333; }
+.EstNameProdCross { font-size: 12px; line-height: 17px; margin-bottom: 5px; display: block; height: 54px; font-family: 'Open Sans', verdana, arial; font-weight: 400; }
+.EstNameProdCross a { display: block; height: 36px; overflow: hidden; }
+.EstPriceProdCross { text-align: center; margin: 0 0 8px 0; font-size: 14px; font-family: 'Open Sans', verdana, arial !important; font-weight: 600; background-color: #FFFFFF; border: 0 solid #cecece; color: #5C9E0D; }
+.EstDescrProdCross { font-size: 10px; text-align: center; margin: 100px 0 0 0; display: block; cursor: pointer !important; border: 0 solid #cecece; color: #000000; }
+#idListProdCrossFC li:hover .EstDescrProdCross { background: #FFFFFF; border: 1px solid #cccccc; margin: -105px 0 0 0; width: 100%; height: 100px; padding: 20px; font-size: 13px; line-height: 16px; box-sizing: border-box; opacity: 0.9; position: relative; font-family: 'Open Sans', verdana, arial; font-weight: 400; overflow: hidden; }
+.EstDescrProdCross span { overflow: hidden; height: 33px; display: block; }
+#EstCommentsTxt { font-size: 18px; padding: 9px 0; text-align: left; height: 30px; display: block; margin: 0 0 5px 0; background: #FFFFFF; color: <tag-FCCSSMainColor>; }
+#idListProdCrossFC li .EstCatProdCross .EstCatNameProdCross { color: #efefef }
+#idListProdCrossFC li:hover .EstDescrProdCross { background: #FFFFFF; border: 1px solid #cccccc; transition: margin 0.5s ease; margin: -105px 0 0 0; width: 100%; height: 100px; padding: 20px; font-size: 13px; line-height: 16px; box-sizing: border-box; opacity: 0.9; position: relative; font-family: 'Open Sans', verdana, arial; font-weight: 400; overflow: hidden; }
+
+/* Footer - Rodape.htm */ 
+.FootterMainBarFC .row ul li a { color: #ffffff; }
+.FooterNewsletterBox { background-color: #FFFFFF }
+span .FooterNewsletterInput { border: 1px solid #ffffff !important; color: #000000; }
+.FooterTecFastCommerce { color: #666666 }
+.FooterTecFastCommerce a { color: #666666 }
+.FooterInfosContainer svg { box-shadow: 0 0 5px 0 #cccccc; border: 1px solid #cdcdcd; }
+.FooterInfosContainer a:hover svg { box-shadow: 0 0 3px #666666; background-color: #efefef; }
+.FooterInfosContainer path, .FooterInfosContainer rect, .FooterInfosContainer circle { fill: #737373; }
+.FooterInfosContainer a:hover path, .FooterInfosContainer a:hover rect, .FooterInfosContainer a:hover circle { fill: #1a75d7; }
+.FooterInfosContainer a:hover text + text { fill: #333333; }
+
+/* My Account */
+.FCMyCheckout .FooterInfoBannersBG, .FCMyCheckout #idPageHistoryFC { display: none; }
+#FCMenuCli .FCMenuCliImgName .FCMenuCliName .FCMenuCliNameLabel { font-weight: bold; }
+.FCDivLastOrder1NumMyAcc { font-family: 'Open Sans', verdana, arial; font-weight: 600; background-color: #f6f5f5; padding: 10px 10px 10px 5px; }
+.FCDivLastOrder1DateValMyAcc { font-weight: bold; }
+.FCDivOrdersList1NumMyAcc { font-family: 'Open Sans', verdana, arial; font-weight: 600; background-color: #f6f5f5; padding: 10px 10px 10px 5px; }
+.FCDivOrdersList1DateValMyAcc { font-weight: bold; }
+.FCDivLastOrder2PaymentValMyAcc { font-weight: bold; }
+.FCDivLastOrder2ValMyAcc { color: #558b2f; font-size: 1.5em; }
+.FCMyCheckout .FCCurrencyLabel { color: #558b2f; }
+#idTxtSit1MyAccOrderFC { font-size: 0.9em; font-weight: bold; }
+.FCDivOrdersList2PaymentValMyAcc { font-weight: bold; }
+.FCDivOrdersList2ValMyAcc { color: #558b2f; font-size: 1.5em; }
+.FCDivRating2EmailValMyAcc { font-size: 0.9em; }
+.FCDivRating2DateValMyAcc { font-size: 0.9em; font-weight: bold; }
+.FCMyAccount .buttonForm { text-transform: uppercase; font-weight: bold; }
+.FCDivAddress1MyAcc { font-family: 'Open Sans', verdana, arial; font-weight: 600; background-color: #f6f5f5 !important; }
+.FCDivCards2DateValMyAcc { font-size: 0.9em; font-weight: bold; }
+.FCDivProdAv2DateUntilValMyAcc { font-weight: bold; }
+.FCDivRegister1NomeMyAcc { font-family: 'Open Sans', verdana, arial; font-weight: 600; background-color: #f6f5f5; padding: 10px 10px 10px 5px; }
+.FCDivCards1MyAcc { background-color: #f6f5f5 !important; }
+.FCDivCards1ImgMyAcc img { border: 1px solid #eaeaea }
+.FCDivProdAv1ProdNameMyAcc { font-family: 'Open Sans', verdana, arial; font-weight: 600; background-color: #f6f5f5; padding: 10px; }
+.FCDivRating1ProdNameMyAcc { font-family: 'Open Sans', verdana, arial; font-weight: 600; background-color: #f6f5f5; padding: 10px; }
+#FCMyAccContentCards .FCMyAccContent .FCDivExtCardsMyAcc .buttonMyAcc { background: #e53935; }
+#FCMyAccContentAddress .FCMyAccContent .FCDivExtAddressMyAcc .buttonsMyAcc #idAddressDelete { background: #e53935; }
+#FCMyAccContentRating .FCMyAccContent .FCDivExtRatingMyAcc .buttonsMyAcc #idRatingDelete { background: #e53935; }
+#FCMyAccContentProdAv .FCMyAccContent .FCDivExtProdAvMyAcc .buttonsMyAcc #idProdAvDelete { background: #e53935; }
+.FCAddressMyAcc #idAccountMyAddressFC #FCMyAccContentAddress .buttonsAddAddressMyAcc #idRegisterAddress { background: #1e88e5; font-weight: bold; }
+.FCMyAccContent .FCDivExtLastOrderMyAcc .buttonsMyAcc #idSeeAllOrders { background: #1e88e5; }
+.FCMyAccContent .FCDivExtAccessMyAcc .buttonsMyAcc #idAccessPswEdit { background: #1e88e5; }
+.FCMyAccContent .FCDivExtOrdersListMyAcc .buttonsMyAcc #idSeeDetailTracking { background: #1e88e5; }
+#FCMyAccContentMyAddress, .FCDivAddress2MyAcc { font-size: 0.9em; }
+
+/* Color for cart out of stock */
+.EstQtdInv td { background: #ffe6e6 !important }
+.EstQtdInv .FCCartQtyInput { background: #fff; border: 1px solid red; }
